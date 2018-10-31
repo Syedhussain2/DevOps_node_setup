@@ -29,6 +29,5 @@ end
 
 link '/etc/nginx/sites-enabled/default' do
   action :delete
-  notifies :restart, 'service[nginx]', :delayed
-  
+  notifies :restart, 'service[nginx]', :delayed  
 end
